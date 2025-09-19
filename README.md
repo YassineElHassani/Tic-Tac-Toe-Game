@@ -44,7 +44,7 @@ Configurable Tic Tac Toe game with dynamic grid sizes and customizable win condi
 ```
 dynamic-tic-tac-toe/
 ├── index.html          # Main HTML structure
-├── styles.css          # CSS styling
+├── style.css          # CSS styling
 ├── script.js          # JavaScript logic
 └── README.md          # This documentation
 ```
@@ -163,10 +163,10 @@ function handleCellClick(row, col) {
 function checkWin(row, col) {
     const symbol = board[row][col];
     const directions = [
-        [ 0, 1 ],  // Horizontal →
-        [ 1, 0 ],  // Vertical ↓
-        [ 1, 1 ],  // Diagonal ↘
-        [ 1, -1 ]  // Anti-diagonal ↙
+        [ 0, 1 ],  // Horizontal __
+        [ 1, 0 ],  // Vertical |
+        [ 1, 1 ],  // Diagonal \
+        [ 1, -1 ]  // Anti-diagonal /
     ];
 
     for (const [dx, dy] of directions) {
@@ -283,45 +283,45 @@ document.getElementById('winLength').addEventListener('change', (e) => {
 ## Manual Checklist
 
 #### Basic Functionality
-- [ ] Game starts with Player 1
-- [ ] Players alternate turns correctly
-- [ ] Symbols appear in clicked cells
-- [ ] Cannot click occupied cells
-- [ ] Cannot play after game ends
+- Game starts with Player 1
+- Players alternate turns correctly
+- Symbols appear in clicked cells
+- Cannot click occupied cells
+- Cannot play after game ends
 
 #### Win Detection
-- [ ] Horizontal wins detected (all directions)
-- [ ] Vertical wins detected (all directions)  
-- [ ] Diagonal wins detected (both diagonals)
-- [ ] Win detection works for custom win lengths
-- [ ] Win detection works on different grid sizes
+- Horizontal wins detected (all directions)
+- Vertical wins detected (all directions)  
+- Diagonal wins detected (both diagonals)
+- Win detection works for custom win lengths
+- Win detection works on different grid sizes
 
 #### Draw Detection
-- [ ] Draw declared when board full with no winner
-- [ ] Draw message displays correctly
-- [ ] Game properly ends on draw
+- Draw declared when board full with no winner
+- Draw message displays correctly
+- Game properly ends on draw
 
 #### Settings & Configuration
-- [ ] Grid size changes work (3×3 to 10×10)
-- [ ] Win length changes work (3 to grid size)
-- [ ] Symbol selection works for both players
-- [ ] Settings validation prevents invalid configurations
-- [ ] Settings apply correctly and start new game
+- Grid size changes work (3×3 to 10×10)
+- Win length changes work (3 to grid size)
+- Symbol selection works for both players
+- Settings validation prevents invalid configurations
+- Settings apply correctly and start new game
 
 #### Data Persistence
-- [ ] Scores save between page refreshes
-- [ ] Score reset button works
-- [ ] LocalStorage data structure is correct
+- Scores save between page refreshes
+- Score reset button works
+- LocalStorage data structure is correct
 
 #### Responsive Design
-- [ ] Game works on mobile devices
-- [ ] Game works on tablets
-- [ ] Game works on desktop
-- [ ] All controls accessible on all screen sizes
+- Game works on mobile devices
+- Game works on tablets
+- Game works on desktop
+- All controls accessible on all screen sizes
 
 ### Edge Cases
-- [ ] Grid size 3×3 with win length 3
-- [ ] Grid size 10×10 with win length 10
-- [ ] Win on last possible move
-- [ ] Multiple potential wins in same move
-- [ ] Browser with localStorage disabled
+- Grid size 3×3 with win length 3
+- Grid size 10×10 with win length 10
+- Win on last possible move
+- Multiple potential wins in same move
+- Browser with localStorage disabled
