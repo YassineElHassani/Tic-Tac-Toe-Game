@@ -36,7 +36,7 @@ Configurable Tic Tac Toe game with dynamic grid sizes and customizable win condi
 - **Horizontal**: Left to right __
 - **Vertical**: Top to bottom |
 - **Diagonal**: Top-left to bottom-right \
-- **Anti-diagonal**: Top-right to bottom-left /
+- **Anti-diagonal**: Top-right to bottom-left / 
 
 ## Technical Documentation
 
