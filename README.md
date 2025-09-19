@@ -33,10 +33,10 @@ Configurable Tic Tac Toe game with dynamic grid sizes and customizable win condi
 4. **Draw Condition**: Game ends in draw if board is full with no winner
 
 ### Win Detection Directions
-- **Horizontal**: Left to right (→)
-- **Vertical**: Top to bottom (↓)  
-- **Diagonal**: Top-left to bottom-right (↘)
-- **Anti-diagonal**: Top-right to bottom-left (↙)
+- **Horizontal**: Left to right __
+- **Vertical**: Top to bottom |
+- **Diagonal**: Top-left to bottom-right \
+- **Anti-diagonal**: Top-right to bottom-left /
 
 ## Technical Documentation
 
